@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش نصب PyCharm | آموزش مقدماتی</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- نوار ناوبری بالا -->
+    <nav class="lesson-nav">
+        <div class="container nav-container">
+            <a href="01-intro.html" class="back-link">→ بازگشت به درس ۱</a>
+            <span class="lesson-indicator">ضمیمه درس ۱</span>
+        </div>
+    </nav>
+
+    <main class="container lesson-content">
+        <!-- هدر درس -->
+        <header class="lesson-header">
+            <span class="lesson-badge">مقدماتی</span>
+            <h1>آموزش کامل نصب PyCharm</h1>
+            <p class="lesson-meta">⏱️ زمان مطالعه: ۱۰ دقیقه | 📅 آخرین بروزرسانی: ۱۴۰۵</p>
+        </header>
+
+        <!-- نوار پیشرفت -->
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 100%"></div>
+        </div>
+
+        <!-- محتوای درس -->
+        <article class="lesson-body">
+            <!-- بخش ۱: معرفی پایچارم -->
+            <section>
+                <h2>PyCharm چیست؟</h2>
+                <p><strong>PyCharm</strong> یک محیط توسعه یکپارچه (IDE) اختصاصی برای زبان پایتون است که توسط شرکت <strong>JetBrains</strong> ساخته شده. بر خلاف VS Code که یک ویرایشگر متن همه‌منظوره با افزونه پایتون است، پایچارم از ابتدا مخصوص پایتون طراحی شده و ابزارهای پیشرفته‌تری مثل تشخیص خودکار خطا، ریفکتور کردن هوشمند کد، دیباگر گرافیکی قدرتمند و مدیریت پروژه حرفه‌ای را به‌صورت پیش‌فرض دارد.</p>
+
+                <div class="info-box">
+                    <strong>💡 چرا پایچارم را امتحان کنیم؟</strong>
+                    <ul>
+                        <li>تشخیص خطا و پیشنهاد تکمیل کد بسیار دقیق‌تر و هوشمندتر</li>
+                        <li>دیباگر گرافیکی حرفه‌ای برای پیدا کردن باگ‌ها به‌صورت مرحله‌به‌مرحله</li>
+                        <li>مدیریت داخلی محیط‌های مجازی (venv) و پکیج‌ها</li>
+                        <li>ادغام کامل با Git و ابزارهای کنترل نسخه</li>
+                        <li>پشتیبانی داخلی از Jupyter Notebook</li>
+                    </ul>
+                </div>
+
+                <div class="tip-box warning">
+                    <strong>⚠️ نکته مهم درباره نسخه‌ها:</strong> تا قبل از سال ۲۰۲۵، پایچارم دو نسخه جدا داشت: <strong>Community</strong> (رایگان و متن‌باز) و <strong>Professional</strong> (پولی). از نسخه <strong>۲۰۲۵.۱</strong> به بعد، JetBrains این دو را در یک محصول واحد به نام «PyCharm» ادغام کرده است. یعنی دیگر نصب‌کننده جداگانه‌ای با نام Community وجود ندارد؛ همه یک نسخه را نصب می‌کنند.
+                </div>
+            </section>
+
+            <!-- بخش ۲: مدل رایگان/پولی -->
+            <section>
+                <h2>💳 نسخه رایگان در مقابل Pro</h2>
+                <p>در نسخه یکپارچه فعلی پایچارم، وضعیت به این شکل است:</p>
+
+                <div class="requirements-grid">
+                    <div class="req-card">
+                        <h4>🆓 نسخه رایگان (Core)</h4>
+                        <ul>
+                            <li>همیشه و برای همیشه رایگان است</li>
+                            <li>شامل تمام امکانات اصلی پایتون</li>
+                            <li>شامل پشتیبانی از Jupyter Notebook</li>
+                            <li>دیباگر، Git، تست‌ران و ریفکتورینگ</li>
+                        </ul>
+                    </div>
+
+                    <div class="req-card">
+                        <h4>⭐ اشتراک Pro</h4>
+                        <ul>
+                            <li>پشتیبانی کامل از Django و Flask</li>
+                            <li>ابزارهای پایگاه داده و SQL</li>
+                            <li>توسعه ریموت (Remote Development)</li>
+                            <li>ابزارهای علمی و تحلیل داده پیشرفته</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip-box info">
+                    <strong>ℹ️ نحوه کار دوره آزمایشی:</strong> با نصب پایچارم، به‌صورت خودکار یک دوره آزمایشی ۳۰ روزه رایگان از امکانات Pro برایتان فعال می‌شود. بعد از پایان این ۳۰ روز، دو راه دارید: خرید اشتراک Pro، یا ادامه استفاده رایگان و نامحدود از نسخه Core. برای یادگیری پایتون در حد این دوره، نسخه رایگان کاملاً کافی است و هیچ نیازی به خرید اشتراک ندارید.
+                </div>
+            </section>
+
+            <!-- بخش ۳: پیش‌نیازهای سیستم -->
+            <section>
+                <h2>📋 پیش‌نیازهای سیستم</h2>
+                <p>پایچارم نسبت به VS Code سنگین‌تر است، پس قبل از نصب سیستم خود را بررسی کنید:</p>
+
+                <div class="requirements-grid">
+                    <div class="req-card">
+                        <h4>💻 ویندوز</h4>
+                        <ul>
+                            <li>ویندوز ۱۰ یا ۱۱ (پردازنده x86_64 یا arm64)</li>
+                            <li>حداقل ۸ گیگابایت رم (۳ گیگ برای خود IDE)</li>
+                            <li>۱۰ گیگابایت فضای خالی دیسک</li>
+                        </ul>
+                    </div>
+
+                    <div class="req-card">
+                        <h4>🍎 مک</h4>
+                        <ul>
+                            <li>macOS نسخه ۱۵ یا ۲۶</li>
+                            <li>حداقل ۸ گیگابایت رم</li>
+                            <li>۱۰ گیگابایت فضای خالی دیسک</li>
+                        </ul>
+                    </div>
+
+                    <div class="req-card">
+                        <h4>🐧 لینوکس</h4>
+                        <ul>
+                            <li>Ubuntu 24.04+ / Fedora 43+ / Debian 13+</li>
+                            <li>حداقل ۸ گیگابایت رم</li>
+                            <li>۱۰ گیگابایت فضای خالی دیسک</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip-box info">
+                    <strong>ℹ️ توجه:</strong> برای اجرای پایچارم نیازی به نصب جاوا ندارید؛ یک نسخه از JetBrains Runtime به‌صورت داخلی همراه IDE نصب می‌شود.
+                </div>
+            </section>
+
+            <!-- بخش ۴: روش نصب: Toolbox App -->
+            <section>
+                <h2>🧰 روش پیشنهادی: نصب با JetBrains Toolbox App</h2>
+                <p>JetBrains برای نصب همه محصولاتش (از جمله پایچارم) استفاده از برنامه <strong>Toolbox App</strong> را توصیه می‌کند. این برنامه به‌صورت خودکار به‌روزرسانی‌ها را مدیریت می‌کند، امکان نصب چند نسخه هم‌زمان را می‌دهد و حذف برنامه را بسیار ساده‌تر می‌کند.</p>
+
+                <ol class="steps-list">
+                    <li>
+                        <strong>دانلود Toolbox App:</strong>
+                        <p>به آدرس <a href="https://www.jetbrains.com/toolbox/app/" target="_blank">jetbrains.com/toolbox/app</a> بروید و نسخه سیستم‌عامل خود را دانلود کنید.</p>
+                        <div class="tip-box warning">
+                            <strong>⚠️ نکته مهم:</strong> همیشه از سایت رسمی jetbrains.com دانلود کنید تا از دریافت نسخه‌های جعلی یا آلوده جلوگیری شود.
+                        </div>
+                    </li>
+
+                    <li>
+                        <strong>نصب Toolbox App:</strong>
+                        <p>فایل دانلود شده را اجرا کنید و مراحل نصب‌کننده را دنبال کنید (در ویندوز فایل exe.، در مک فایل dmg. و در لینوکس فایل tar.gz.).</p>
+                    </li>
+
+                    <li>
+                        <strong>انتخاب و نصب PyCharm:</strong>
+                        <p>بعد از اجرای Toolbox App، آیکون آن را در نوار اعلانات (ویندوز/لینوکس) یا نوار منو (مک) پیدا کنید. لیست محصولات JetBrains باز می‌شود؛ روی <strong>PyCharm</strong> کلیک کرده و دکمه <strong>Install</strong> را بزنید.</p>
+                    </li>
+
+                    <li>
+                        <strong>ورود به حساب کاربری (اختیاری):</strong>
+                        <p>اگر لایسنس Pro دارید، با ورود به حساب JetBrains خود، لایسنس به‌صورت خودکار فعال می‌شود. برای استفاده رایگان، می‌توانید این مرحله را رد کنید.</p>
+                    </li>
+                </ol>
+
+                <div class="tip-box success">
+                    <strong>✅ چرا Toolbox App بهتر است؟</strong>
+                    <p>هر وقت نسخه جدید پایچارم منتشر شود، Toolbox App به شما اطلاع می‌دهد و به‌روزرسانی تنها با یک کلیک انجام می‌شود. همچنین اگر بعداً بخواهید IDE دیگری از JetBrains (مثل WebStorm) نصب کنید، همه از یک‌جا مدیریت می‌شوند.</p>
+                </div>
+            </section>
+
+            <!-- بخش ۵: روش نصب مستقیم -->
+            <section>
+                <h2>📦 روش دوم: نصب مستقیم (Standalone)</h2>
+                <p>اگر ترجیح می‌دهید مستقیماً نصب‌کننده پایچارم را دانلود کنید (بدون Toolbox App)، این روش هم کاملاً معتبر است.</p>
+
+                <ol class="steps-list">
+                    <li>
+                        <strong>ورود به صفحه دانلود:</strong>
+                        <p>به آدرس <a href="https://www.jetbrains.com/pycharm/download/" target="_blank">jetbrains.com/pycharm/download</a> بروید. سیستم‌عامل شما (ویندوز، مک یا لینوکس) به‌صورت خودکار تشخیص داده می‌شود.</p>
+                    </li>
+
+                    <li>
+                        <strong>دانلود نصب‌کننده:</strong>
+                        <p>روی دکمه <strong>Download</strong> کلیک کنید. برای ویندوز فایل exe. و برای مک، بسته به نوع پردازنده (Intel یا Apple Silicon)، فایل dmg. مناسب را انتخاب کنید.</p>
+                    </li>
+
+                    <li>
+                        <strong>اجرای نصب‌کننده (ویندوز):</strong>
+                        <p>فایل دانلود شده را اجرا کنید. در مراحل نصب‌کننده به این گزینه‌ها دقت کنید:</p>
+                        <ul>
+                            <li><code>64-bit launcher</code>: ساخت میانبر روی دسکتاپ</li>
+                            <li><code>.py</code>: باز شدن فایل‌های پایتون به‌صورت پیش‌فرض با پایچارم</li>
+                            <li><code>Add launchers dir to the PATH</code>: امکان اجرای پایچارم از خط فرمان</li>
+                        </ul>
+                        <p>سپس روی <strong>Install</strong> کلیک کنید و صبر کنید تا نصب کامل شود.</p>
+                    </li>
+
+                    <li>
+                        <strong>اجرای نصب‌کننده (مک):</strong>
+                        <p>فایل dmg. را باز کنید و آیکون PyCharm را به داخل پوشه Applications بکشید.</p>
+                    </li>
+
+                    <li>
+                        <strong>اجرای نصب‌کننده (لینوکس):</strong>
+                        <p>فایل فشرده tar.gz. را در مسیر دلخواه (طبق استاندارد FHS معمولاً <code>opt/</code>) استخراج کنید:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>bash</span>
+                                <button class="copy-btn" onclick="copyCode(this)">کپی</button>
+                            </div>
+                            <pre><code>sudo tar xzf pycharm-*.tar.gz -C /opt/
+cd /opt/pycharm-*/bin
+./pycharm.sh</code></pre>
+                        </div>
+                        <p>همچنین می‌توانید پایچارم را از طریق snap نصب کنید:</p>
+                        <div class="code-block">
+                            <pre><code>sudo snap install pycharm --classic</code></pre>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- بخش ۶: اجرای اولیه -->
+            <section>
+                <h2>🚀 اجرای پایچارم برای اولین بار</h2>
+
+                <ol class="steps-list">
+                    <li>
+                        <strong>باز کردن برنامه:</strong>
+                        <p>در ویندوز از Start Menu یا میانبر دسکتاپ، در مک از پوشه Applications یا Launchpad، و در لینوکس با اجرای اسکریپت <code>pycharm.sh</code>، برنامه را باز کنید.</p>
+                    </li>
+
+                    <li>
+                        <strong>وارد کردن تنظیمات قبلی (اختیاری):</strong>
+                        <p>در اولین اجرا، پایچارم می‌پرسد آیا می‌خواهید تنظیمات یک IDE دیگر (مثلاً VS Code) را وارد کنید یا خیر. برای شروع تازه، می‌توانید این مرحله را رد کنید.</p>
+                    </li>
+
+                    <li>
+                        <strong>انتخاب تم ظاهری:</strong>
+                        <p>در صفحه خوش‌آمدگویی (Welcome Screen)، می‌توانید تم روشن یا تیره و چیدمان کیبورد دلخواه خود را انتخاب کنید.</p>
+                    </li>
+
+                    <li>
+                        <strong>ساخت پروژه جدید:</strong>
+                        <p>روی گزینه <strong>New Project</strong> کلیک کنید. یک مسیر برای پروژه انتخاب کرده و مطمئن شوید گزینه <strong>Create a main.py welcome script</strong> فعال است.</p>
+                    </li>
+
+                    <li>
+                        <strong>تنظیم مفسر پایتون (Interpreter):</strong>
+                        <p>پایچارم به‌صورت خودکار پایتون نصب‌شده روی سیستم شما را پیدا می‌کند و پیشنهاد می‌دهد یک محیط مجازی (venv) جدید برای این پروژه بسازد. این گزینه پیش‌فرض را بپذیرید؛ این کار باعث می‌شود پکیج‌های هر پروژه از پروژه‌های دیگر جدا بمانند.</p>
+                        <p>اگر بعداً خواستید مفسر را عوض کنید: <code>Ctrl+Alt+S</code> (ویندوز/لینوکس) یا <code>Cmd+,</code> (مک) را بزنید و به مسیر <code>Project → Python Interpreter</code> بروید.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- بخش ۷: اولین برنامه -->
+            <section>
+                <h2>👋 اولین برنامه: Hello World در پایچارم</h2>
+                <p>حالا بیایید همان برنامه ساده درس اول را این‌بار داخل پایچارم بنویسیم:</p>
+
+                <ol class="steps-list">
+                    <li>
+                        <strong>ساخت فایل جدید:</strong>
+                        <p>روی نام پوشه پروژه در پنل سمت راست (Project) راست‌کلیک کنید و مسیر <code>New → Python File</code> را انتخاب کنید. نام فایل را <code>hello</code> بگذارید (پایچارم خودش پسوند py. را اضافه می‌کند).</p>
+                    </li>
+
+                    <li>
+                        <strong>نوشتن کد:</strong>
+                        <p>این کد را در فایل بنویسید. همان‌طور که تایپ می‌کنید، پایچارم پیشنهادهای تکمیل کد را نمایش می‌دهد:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>hello.py</span>
+                                <button class="copy-btn" onclick="copyCode(this)">کپی</button>
+                            </div>
+                            <pre><code># اولین برنامه من در پایچارم
+print("Hello, World!")
+print("به دنیای برنامه‌نویسی خوش آمدید!")</code></pre>
+                        </div>
+                    </li>
+
+                    <li>
+                        <strong>اجرای فایل:</strong>
+                        <p>روی فلش سبز رنگ کنار خط اول کد، یا در گوشه بالا-راست پنجره کلیک کنید. همچنین می‌توانید کلید میانبر <code>Shift+F10</code> (ویندوز/لینوکس) یا <code>Ctrl+R</code> (مک) را بزنید.</p>
+                        <p>خروجی در پنل Run در پایین صفحه نمایش داده می‌شود:</p>
+                        <div class="code-block output">
+                            <pre><code>Hello, World!
+به دنیای برنامه‌نویسی خوش آمدید!</code></pre>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="tip-box success">
+                    <strong>✅ چند نکته کاربردی برای شروع:</strong>
+                    <ul>
+                        <li>برای اجرای دیباگر به‌جای اجرای عادی، از دکمه سبز رنگ کنار فلش اجرا (شکل حشره 🐛) استفاده کنید.</li>
+                        <li>برای دیدن همه میانبرهای صفحه‌کلید: <code>Help → Keymap Reference</code></li>
+                        <li>دکمه <strong>Learn</strong> در صفحه خوش‌آمدگویی، یک آموزش تعاملی داخل خود IDE برایتان باز می‌کند.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- بخش ۸: عیب‌یابی -->
+            <section>
+                <h2>🔧 عیب‌یابی مشکلات رایج</h2>
+
+                <div class="troubleshoot-grid">
+                    <div class="trouble-item">
+                        <h4>❌ نصب‌کننده اجرا نمی‌شود یا کند است</h4>
+                        <p><strong>علت:</strong> سیستم به حداقل نیازمندی‌ها (به‌خصوص ۸ گیگ رم) نمی‌رسد.</p>
+                        <p><strong>راه‌حل:</strong> برنامه‌های سنگین دیگر را ببندید. اگر باز هم کند بود، از VS Code به‌عنوان جایگزین سبک‌تر استفاده کنید.</p>
+                    </div>
+
+                    <div class="trouble-item">
+                        <h4>❌ پایچارم مفسر پایتون را پیدا نمی‌کند</h4>
+                        <p><strong>علت:</strong> پایتون هنوز روی سیستم نصب نشده یا در مسیر استاندارد نیست.</p>
+                        <p><strong>راه‌حل:</strong> ابتدا طبق درس اول پایتون را نصب کنید، سپس در پایچارم به <code>Project → Python Interpreter → Add Interpreter</code> بروید و مسیر نصب پایتون را دستی معرفی کنید.</p>
+                    </div>
+
+                    <div class="trouble-item">
+                        <h4>❌ پیام "Pro trial expired" نمایش داده می‌شود</h4>
+                        <p><strong>علت:</strong> دوره آزمایشی ۳۰ روزه Pro تمام شده است.</p>
+                        <p><strong>راه‌حل:</strong> نگران نباشید؛ کافی است گزینه <strong>Keep using Community features for free</strong> (یا مشابه آن) را انتخاب کنید تا بدون محدودیت به استفاده از نسخه رایگان ادامه دهید.</p>
+                    </div>
+
+                    <div class="trouble-item">
+                        <h4>❌ در لینوکس با خطای پکیج‌های گرافیکی مواجه می‌شوم</h4>
+                        <p><strong>علت:</strong> برخی وابستگی‌های گرافیکی نصب نیستند.</p>
+                        <p><strong>راه‌حل:</strong> پکیج‌های <code>libxi6</code>، <code>libxrender1</code>، <code>libxtst6</code> و <code>libfontconfig</code> را نصب کنید:</p>
+                        <div class="code-block">
+                            <pre><code>sudo apt install libxi6 libxrender1 libxtst6 libfontconfig</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- بخش ۹: مقایسه نهایی -->
+            <section>
+                <h2>⚖️ پایچارم یا VS Code؟</h2>
+                <p>هیچ‌کدام «بهتر مطلق» نیستند؛ انتخاب به نیاز شما بستگی دارد:</p>
+
+                <div class="info-box">
+                    <strong>💡 جمع‌بندی ساده:</strong>
+                    <ul>
+                        <li><strong>VS Code</strong> را انتخاب کنید اگر: سیستم ضعیف‌تری دارید، به چند زبان برنامه‌نویسی هم‌زمان نیاز دارید، یا سبکی و سرعت راه‌اندازی برایتان مهم است.</li>
+                        <li><strong>PyCharm</strong> را انتخاب کنید اگر: فقط با پایتون کار می‌کنید، روی پروژه‌های بزرگ‌تر کار می‌کنید، یا به ابزارهای دیباگ و ریفکتور پیشرفته نیاز دارید.</li>
+                        <li>برای شروعِ شروع (چند هفته اول یادگیری)، هر دو گزینه کاملاً مناسب هستند و می‌توانید بعداً هم بین آن‌ها جابه‌جا شوید.</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script>
+        function copyCode(button) {
+            const codeBlock = button.closest('.code-block').querySelector('code');
+            navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+                const originalText = button.textContent;
+                button.textContent = 'کپی شد ✔';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 1500);
+            });
+        }
+    </script>
+</body>
+</html>
