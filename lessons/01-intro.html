@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس ۱: آشنایی با پایتون و نصب آن | آموزش مقدماتی</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- نوار ناوبری بالا -->
+    <nav class="lesson-nav">
+        <div class="container nav-container">
+            <a href="../index.html" class="back-link">→ بازگشت به فهرست</a>
+            <span class="lesson-indicator">درس ۱ از ۵</span>
+        </div>
+    </nav>
+
+    <main class="container lesson-content">
+        <!-- هدر درس -->
+        <header class="lesson-header">
+            <span class="lesson-badge">مقدماتی</span>
+            <h1>آشنایی با پایتون و نصب آن</h1>
+            <p class="lesson-meta">⏱️ زمان مطالعه: ۱۵ دقیقه | 📅 آخرین بروزرسانی: ۱۴۰۵</p>
+        </header>
+
+        <!-- نوار پیشرفت -->
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 20%"></div>
+        </div>
+
+        <!-- محتوای درس -->
+        <article class="lesson-body">
+            <!-- بخش ۱: معرفی پایتون -->
+            <section>
+                <h2>پایتون چیست؟</h2>
+                <p>پایتون یک زبان برنامه‌نویسی سطح بالا، تفسیری و همه‌منظوره است که در سال ۱۹۹۱ توسط <strong>گیدو ون روسوم</strong> ایجاد شد. نام این زبان از برنامه تلویزیونی «سیرک پرنده مانتی پایتون» گرفته شده است.</p>
+                
+                <div class="info-box">
+                    <strong>💡 چرا پایتون برای شروع عالی است؟</strong>
+                    <ul>
+                        <li>سینتکس ساده و خوانا (شبیه زبان انگلیسی)</li>
+                        <li>جامعه بزرگ و منابع آموزشی فراوان</li>
+                        <li>کاربرد در وب، هوش مصنوعی، علم داده و اتوماسیون</li>
+                        <li>رایگان و متن‌باز</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- بخش ۲: پیش‌نیازهای سیستم -->
+            <section>
+                <h2>📋 پیش‌نیازهای سیستم</h2>
+                <p>قبل از نصب، مطمئن شوید سیستم شما حداقل نیازمندی‌ها را دارد:</p>
+                
+                <div class="requirements-grid">
+                    <div class="req-card">
+                        <h4>💻 ویندوز</h4>
+                        <ul>
+                            <li>ویندوز ۸.۱ یا بالاتر (۶۴-بیت توصیه می‌شود)</li>
+                            <li>حداقل ۲ گیگابایت رم</li>
+                            <li>۵۰۰ مگابایت فضای خالی</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="req-card">
+                        <h4>🍎 مک</h4>
+                        <ul>
+                            <li>macOS 10.9 (Mavericks) یا بالاتر</li>
+                            <li>حداقل ۲ گیگابایت رم</li>
+                            <li>۵۰۰ مگابایت فضای خالی</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="req-card">
+                        <h4>🐧 لینوکس</h4>
+                        <ul>
+                            <li>Ubuntu 18.04+ / Fedora 30+ / Debian 10+</li>
+                            <li>حداقل ۱ گیگابایت رم</li>
+                            <li>۳۰ مگابایت فضای خالی</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- بخش ۳: نصب روی ویندوز -->
+            <section>
+                <h2>🪟 نصب روی ویندوز (مرحله به مرحله)</h2>
+                
+                <ol class="steps-list">
+                    <li>
+                        <strong>دانلود نصب‌کننده:</strong>
+                        <p>به سایت رسمی پایتون بروید: <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a></p>
+                        <p>روی دکمه زرد رنگ <strong>"Download Python 3.x.x"</strong> کلیک کنید (آخرین نسخه پایدار).</p>
+                        <div class="tip-box warning">
+                            <strong>⚠️ نکته مهم:</strong> همیشه از سایت رسمی دانلود کنید. از سایت‌های متفرقه ممکن است بدافزار دریافت کنید.
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>اجرای فایل دانلود شده:</strong>
+                        <p>فایل <code>python-3.x.x-amd64.exe</code> را اجرا کنید.</p>
+                        <div class="tip-box critical">
+                            <strong>🚨 حیاتی‌ترین مرحله:</strong> قبل از کلیک روی "Install Now"، حتماً تیک گزینه زیر را بزنید:<br>
+                            <code>☑ Add Python 3.x to PATH</code><br>
+                            بدون این تیک، نمی‌توانید پایتون را در Command Prompt اجرا کنید!
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>انتخاب نوع نصب:</strong>
+                        <p>دو گزینه دارید:</p>
+                        <ul>
+                            <li><strong>Install Now:</strong> نصب سریع با تنظیمات پیش‌فرض (توصیه شده برای مبتدیان)</li>
+                            <li><strong>Customize installation:</strong> انتخاب ماژول‌ها و مسیر نصب (برای کاربران پیشرفته)</li>
+                        </ul>
+                        <p>برای شروع، <strong>Install Now</strong> را انتخاب کنید.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>صبر برای اتمام نصب:</strong>
+                        <p>فرآیند نصب ۲-۵ دقیقه طول می‌کشد. پنجره‌ای با پیام "Setup was successful" نمایش داده می‌شود.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>غیرفعال کردن محدودیت طول مسیر (اختیاری اما توصیه شده):</strong>
+                        <p>اگر پیام "Disable path length limit" دیدید، روی آن کلیک کنید. این کار محدودیت ۲۶۰ کاراکتری ویندوز را برمی‌دارد.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>بررسی نصب:</strong>
+                        <p>کلیدهای <code>Win + R</code> را بزنید، بنویسید <code>cmd</code> و Enter کنید.</p>
+                        <p>در Command Prompt تایپ کنید:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>cmd</span>
+                                <button class="copy-btn" onclick="copyCode(this)">کپی</button>
+                            </div>
+                            <pre><code>python --version</code></pre>
+                        </div>
+                        <p>اگر خروجی شبیه <code>Python 3.12.0</code> دیدید، تبریک! نصب موفق بوده است. 🎉</p>
+                    </li>
+                </ol>
+                
+                <div class="tip-box success">
+                    <strong>✅ تست نهایی ویندوز:</strong>
+                    <p>در همان Command Prompt تایپ کنید:</p>
+                    <div class="code-block">
+                        <pre><code>python -c "print('سلام پایتون!')"</code></pre>
+                    </div>
+                    <p>اگر عبارت "سلام پایتون!" نمایش داده شد، همه چیز عالی کار می‌کند.</p>
+                </div>
+            </section>
+
+            <!-- بخش ۴: نصب روی مک -->
+            <section>
+                <h2>🍎 نصب روی مک (مرحله به مرحله)</h2>
+                
+                <div class="tip-box info">
+                    <strong>ℹ️ توجه:</strong> مک‌های جدید معمولاً پایتون ۲.۷ قدیمی دارند. ما پایتون ۳ را نصب می‌کنیم که کاملاً جداگانه است.
+                </div>
+                
+                <ol class="steps-list">
+                    <li>
+                        <strong>روش اول: دانلود مستقیم (ساده‌ترین)</strong>
+                        <p>به <a href="https://www.python.org/downloads/macos/" target="_blank">python.org/downloads/macos</a> بروید.</p>
+                        <p>فایل <code>macOS 64-bit universal2 installer</code> را دانلود کنید.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>اجرای نصب‌کننده:</strong>
+                        <p>فایل <code>.pkg</code> را باز کنید و مراحل را دنبال کنید:</p>
+                        <ul>
+                            <li>Continue → Continue → Agree</li>
+                            <li>Install (رمز عبور مدیر سیستم لازم است)</li>
+                            <li>Close پس از اتمام</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <strong>روش دوم: Homebrew (توصیه شده برای توسعه‌دهندگان)</strong>
+                        <p>اگر Homebrew ندارید، ابتدا Terminal را باز کنید و این دستور را بزنید:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>terminal</span>
+                                <button class="copy-btn" onclick="copyCode(this)">کپی</button>
+                            </div>
+                            <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
+                        </div>
+                        <p>سپس پایتون را نصب کنید:</p>
+                        <div class="code-block">
+                            <pre><code>brew install python</code></pre>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>بررسی نصب:</strong>
+                        <p>Terminal را باز کنید (Command + Space → تایپ "Terminal") و بنویسید:</p>
+                        <div class="code-block">
+                            <pre><code>python3 --version</code></pre>
+                        </div>
+                        <div class="tip-box warning">
+                            <strong>⚠️ نکته مک:</strong> در مک باید از <code>python3</code> استفاده کنید، نه <code>python</code>. چون <code>python</code> ممکن است به نسخه قدیمی ۲.۷ اشاره کند.
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>بررسی pip (مدیر بسته):</strong>
+                        <div class="code-block">
+                            <pre><code>pip3 --version</code></pre>
+                        </div>
+                        <p>pip ابزار نصب کتابخانه‌های پایتون است. باید همراه پایتون نصب شده باشد.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- بخش ۵: نصب روی لینوکس -->
+            <section>
+                <h2>🐧 نصب روی لینوکس (مرحله به مرحله)</h2>
+                
+                <div class="tip-box info">
+                    <strong>ℹ️ توجه:</strong> اکثر توزیع‌های لینوکس پایتون ۳ را از پیش نصب دارند. ابتدا بررسی کنید!
+                </div>
+                
+                <ol class="steps-list">
+                    <li>
+                        <strong>بررسی نسخه فعلی:</strong>
+                        <p>ترمینال را باز کنید (Ctrl+Alt+T) و بنویسید:</p>
+                        <div class="code-block">
+                            <pre><code>python3 --version</code></pre>
+                        </div>
+                        <p>اگر نسخه ۳.۸ یا بالاتر دیدید، نیازی به نصب نیست!</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Ubuntu / Debian:</strong>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>bash</span>
+                                <button class="copy-btn" onclick="copyCode(this)">کپی</button>
+                            </div>
+                            <pre><code>sudo apt update
+sudo apt install python3 python3-pip python3-venv</code></pre>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>Fedora:</strong>
+                        <div class="code-block">
+                            <pre><code>sudo dnf install python3 python3-pip</code></pre>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>Arch Linux:</strong>
+                        <div class="code-block">
+                            <pre><code>sudo pacman -S python python-pip</code></pre>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>نصب آخرین نسخه (اختیاری):</strong>
+                        <p>اگر نیاز به آخرین نسخه دارید (مثلاً ۳.۱۲) و مخازن توزیع شما قدیمی است:</p>
+                        <div class="code-block">
+                            <pre><code># Ubuntu PPA
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.12</code></pre>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>بررسی نهایی:</strong>
+                        <div class="code-block">
+                            <pre><code>python3 --version
+pip3 --version</code></pre>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- بخش ۶: نصب ویرایشگر کد -->
+            <section>
+                <h2>📝 نصب ویرایشگر کد (VS Code)</h2>
+                <p>برای نوشتن کد پایتون، به یک ویرایشگر متن نیاز دارید. <strong>Visual Studio Code</strong> بهترین گزینه رایگان است:</p>
+                
+                <ol class="steps-list">
+                    <li>
+                        <strong>دانلود VS Code:</strong>
+                        <p>به <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a> بروید و نسخه مناسب سیستم خود را دانلود کنید.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>نصب افزونه پایتون:</strong>
+                        <p>بعد از نصب VS Code:</p>
+                        <ul>
+                            <li>روی آیکون Extensions در نوار کناری کلیک کنید (یا Ctrl+Shift+X)</li>
+                            <li>جستجو کنید: <code>Python</code></li>
+                            <li>افزونه رسمی Microsoft را نصب کنید (با آیکون آبی پایتون)</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <strong>تنظیم مفسر پایتون:</strong>
+                        <p>کلیدهای <code>Ctrl+Shift+P</code> (ویندوز/لینوکس) یا <code>Cmd+Shift+P</code> (مک) را بزنید.</p>
+                        <p>تایپ کنید: <code>Python: Select Interpreter</code></p>
+                        <p>مسیر پایتون نصب شده را انتخاب کنید.</p>
+                    </li>
+                </ol>
+                
+                <div class="tip-box success">
+                    <strong>✅ جایگزین‌های VS Code:</strong>
+                    <ul>
+                        <li><strong>PyCharm Community:</strong> IDE اختصاصی پایتون (رایگان) — <a href="pycharm-install.html">آموزش کامل نصب پایچارم را اینجا ببینید ←</a></li>
+                        <li><strong>Sublime Text:</strong> سبک و سریع</li>
+                        <li><strong>Thonny:</strong> مخصوص مبتدیان (همراه پایتون نصب می‌شود)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- بخش ۷: اولین برنامه -->
+            <section>
+                <h2>🚀 اولین برنامه: Hello World</h2>
+                <p>حالا که همه چیز نصب شد، اولین برنامه پایتون خود را بنویسید!</p>
+                
+                <ol class="steps-list">
+                    <li>
+                        <strong>روش ۱: تعاملی (سریع‌ترین)</strong>
+                        <p>ترمینال/Command Prompt را باز کنید و بنویسید:</p>
+                        <div class="code-block">
+                            <pre><code>python</code></pre>
+                        </div>
+                        <p>وارد محیط تعاملی پایتون می‌شوید (با علامت <code>>>></code>). حالا بنویسید:</p>
+                        <div class="code-block">
+                            <pre><code>>>> print("Hello, World!")
+Hello, World!
+>>> exit()</code></pre>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <strong>روش ۲: فایل اسکریپت (روش واقعی)</strong>
+                        <p>یک فایل جدید در VS Code بسازید و نام آن را <code>hello.py</code> بگذارید.</p>
+                        <p>این کد را داخلش بنویسید:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>hello.py</span>
+                                <button class="copy-btn" onclick="copyCode(this)">کپی</button>
+                            </div>
+                            <pre><code># اولین برنامه پایتون من
+print("Hello, World!")
+print("به دنیای برنامه‌نویسی خوش آمدید!")</code></pre>
+                        </div>
+                        <p>فایل را ذخیره کنید (Ctrl+S).</p>
+                    </li>
+                    
+                    <li>
+                        <strong>اجرای فایل:</strong>
+                        <p>در ترمینال VS Code (Terminal → New Terminal) بنویسید:</p>
+                        <div class="code-block">
+                            <pre><code>python hello.py</code></pre>
+                        </div>
+                        <p>یا در مک/لینوکس:</p>
+                        <div class="code-block">
+                            <pre><code>python3 hello.py</code></pre>
+                        </div>
+                        <p>خروجی:</p>
+                        <div class="code-block output">
+                            <pre><code>Hello, World!
+به دنیای برنامه‌نویسی خوش آمدید!</code></pre>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- بخش ۸: عیب‌یابی -->
+            <section>
+                <h2>🔧 عیب‌یابی مشکلات رایج</h2>
+                
+                <div class="troubleshoot-grid">
+                    <div class="trouble-item">
+                        <h4>❌ خطای "'python' is not recognized"</h4>
+                        <p><strong>علت:</strong> تیک "Add to PATH" هنگام نصب زده نشده.</p>
+                        <p><strong>راه‌حل:</strong> پایتون را دوباره نصب کنید و این بار تیک را بزنید. یا متغیر محیطی PATH را دستی تنظیم کنید.</p>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <h4>❌ خطای "Permission denied" در لینوکس/مک</h4>
+                        <p><strong>علت:</strong> عدم دسترسی اجرایی به فایل.</p>
+                        <p><strong>راه‌حل:</strong> از <code>sudo</code> استفاده کنید یا مجوز اجرا بدهید: <code>chmod +x file.py</code></p>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <h4>❌ pip کار نمی‌کند</h4>
+                        <p><strong>علت:</strong> pip نصب نشده یا در PATH نیست.</p>
+                        <p><strong>راه‌حل:</strong> در ویندوز: <code>python -m ensurepip --upgrade</code><br>در لینوکس: <code>sudo apt install python3-pip</code></p>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <h4>❌ نسخه پایتون قدیمی است</h4>
+                        <p><strong>علت:</strong> نسخه سیستم‌عامل قدیمی است.</p>
+                        <p><strong>راه‌حل:</strong> از روش‌های ذکر شده در بخش‌های بالا برای نصب آخرین نسخه استفاده کنید.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- بخش ۹: تمرین -->
+<section>
+    <h2>🎯 تمرین عملی</h2>
+    <div class="exercise-box">
+        <p><strong>چالش:</strong> برنامه‌ای بنویسید که اطلاعات زیر را چاپ کند:</p>
+        <ul>
+            <li>نام شما</li>
+            <li>نسخه پایتون نصب شده</li>
+            <li>یک جمله انگیزشی درباره یادگیری برنامه‌نویسی</li>
+        </ul>
+        
+        <p><strong>راهنمایی:</strong> برای گرفتن نسخه پایتون در کد، از این استفاده کنید:</p>
+        <div class="code-block">
+            <div class="code
